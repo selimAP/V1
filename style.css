@@ -5,7 +5,7 @@
     --fontColor: #808080;
     --fontMildGray: #ebebeb;
     --typewriterSpeed: 3s;
-    --typewriterCharacters: 18;
+    --typewriterCharacters: 19;
   }
 
 *{
@@ -173,7 +173,7 @@ body{
     }
 }
 
-@media(max-height: 770px) {
+@media(max-width: 770px) {
     .navitem{
         margin: 60px;
         font-size: 25px;
@@ -247,7 +247,7 @@ body{
     }
 }
 
-@media(max-height: 770px) {
+@media(max-width: 770px) {
     .navitem{
         margin: 60px;
         font-size: 25px;
@@ -312,6 +312,11 @@ body{
   opacity: 0;
   transform: translateY(3rem);
   animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+}
+@media (max-width: 530px) {
+    .subtitle{
+        font-size: 1rem;
+    }
 }
 
 @keyframes typewriter {
