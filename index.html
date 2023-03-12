@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selim's Portfolio</title>
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="splash-screen">
+        <h1>Hi! I'm Selim Afat</h1>
+        <p class="subtitle">Welcome to my Portfolio!</p>
+    </div>
+    <div id="content">
+
+        <header class="header">
+            <nav class="navbar" >
+                <a href="#mainsite" class="navlogo"><h4><img src="images/logo.png" alt=""></h4></a>
+                <ul class="navmenu">
+                    <li class="navitem "><a href="#about" class="navlink itemone"><span class="nav-number">01.</span> About</a></li>
+                    <li class="navitem "><a href="#experience" class="navlink itemtwo"><span class="nav-number">02.</span> Experience</a></li>
+                    <li class="navitem "><a href="#projects" class="navlink itemthree"><span class="nav-number">03.</span> Projects</a></li>
+                    <li class="navitem "><a href="#contact" class="navlink itemfour"><span class="nav-number">04.</span> Contact</a></li>
+                </ul>
+                <div class="lines">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+    
+        <section class="mainsite" id="mainsite">
+            <div class="mainsite-title">
+                <div class="mainsite-hi mainsite-fonts">
+                    <h4>Hello World! I'm</h4>
+                </div>
+                <div class="mainsite-name mainsite-fonts">
+                    <h2>Selim Afat.</h2>
+                </div>
+                <div class="mainsite-make mainsite-fonts">
+                    <h3>Love to build things.</h3>
+                </div>
+                <div class="mainsite-about mainsite-fonts">
+                    <p>I am a student with a passion for programming and technology. I am highly motivated and excited about constantly learning and expanding my skills in computer science.</p>
+                </div>
+                <div class="button">
+                    <button onclick="window.open('mailto:hello@selimafat.com');">✉ Say hi!</button>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="mailto:hello@selimafat.com">hello@selimafat.com</a>
+                <hr>
+            </div>
+        </section>
+
+        <div id="about"></div>
+        <section class="aboutme" id="aboutme">
+            <div class="aboutme-container">
+                <div class="aboutme-title">
+                    <h3><span>01. </span>About me</h3>
+                    <hr>
+                </div>
+                <div class="aboutme-between">
+                <div class="aboutme-text">
+                    <p>
+                        Hi, my name is Selim and I am a student with a passion for programming and technology. I spend a lot of time working on exciting <a href="https://github.com/selimAP" target="_blank">programming projects</a> while deepening my knowledge. <br><br>
+
+                        In doing so, I learn not only how to write programs, but also how to effectively solve problems and develop creative solutions.
+                        I am very motivated to constantly expand and improve my skills in computer science. <br><br>
+
+                        In my free time I use every second to develop my skills. I like to deal with new technologies and keep up to date with what is going on in the industry. <br><br>
+                               
+                        
+                        Here are some technologies I used and am learning:
+                    </p>
+                    <div class="aboutme-skills">
+                        <ul>
+                            <li>HTML & CSS</li>
+                            <li>Node.js</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>TypeScript</li>
+                            <li>SQL</li>
+                            <li>React</li>
+                            <li>C#</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="aboutme-pic">
+                    <img src="images/profile.jpeg" alt="">
+                </div>  
+            
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="experience" id="experience">
+            <div class="experience-container">
+              <div class="experience-title">
+                <h3><span>02. </span>Experience</h3>
+                <hr>
+              </div>
+              <div class="experience-between">
+                <div class="experience-buttons">
+                  <button class="job-button active"  onclick="showText(1)">Lorem</button>
+                  <button class="job-button" onclick="showText(2)">Lorem</button>
+                  <button class="job-button" onclick="showText(3)">Lorem</button>
+                  <button class="job-button" onclick="showText(4)">Lorem</button>
+                  <button class="job-button" onclick="showText(5)">Lorem</button>
+                  <button class="job-button" onclick="showText(6)">Lorem</button>
+                </div>
+                <div class="experience-content">
+                    <small id="date"></small>
+                  <ul id="list"></ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="projects" id="projects">
+            <div class="project-container">
+                <div class="project-title">
+                    <h3><span>03. </span>Projects</h3>
+                    <hr>
+                </div>
+
+                <div class="project-text">
+                    <h4>My Projects</h4>
+                    <p>As a beginner, my projects are still in the early stages of development. However, I have completed several smaller projects that have helped me to improve my programming skills. For example, I built a <a href="https://github.com/selimAP/Calculator" target="_blank"> calculator </a> that can perform various mathematical operations, such as addition, subtraction, multiplication, and division. This was a great way to practice working with user input and conditional statements. <br><br>
+                        Another project I created is a <a href="https://github.com/selimAP/Food-Generator" target="_blank">food generator</a> that can suggest meals. This was a fun and useful project that helped me to extended my JavaScript skills. <br><br>
+                        One of my coolest projects to date is a <a href="https://github.com/selimAP/snake" target="_blank">Snake game</a> that I attempted to recreate from the classic retro game. While I was able to replicate some of the key features of the original game, there are still some bugs and room for improvement. <br><br>
+                        As I continue to develop my skills, I am always looking for new and exciting projects to work on. I post some of my favorite and most useful projects on my <a href="https://github.com/selimAP" target="_blank">GitHub account</a>, which serves as a portfolio of my work. I strive to improve my skills and tackle new challenges every day.<br><br></p>
+
+                </div>
+            </div>
+          </section>
+
+          <section id="contact" class="contact">
+            <div class="contact-container">
+                <div class="contact-title">
+                    <h3><span>04. </span>Contact</h3>
+                    <hr>
+                </div>
+                    <div class="contact-text">
+                        <p>If you have any questions or anything similar, feel free to email me.</p>
+                    </div>
+                <div class="contact-button">
+                    <button onclick="window.open('mailto:hello@selimafat.com');">✉ Say Hello</button>
+                </div>
+            </div>
+          </section>
+
+
+          <footer>
+            <div class="social-media">
+                <p>Follow me on <a href="https://github.com/selimAP" target="_blank">Github</a></p> 
+            </div>
+            <div class="footer">
+                <a href="https://github.com/selimAP" target="_blank">Built and designed by Selim Afat (selimAP).</a>
+                <p>All rights reserved. ©</p>
+            </div>
+          </footer>
+    </div>
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</body>
+</html>
