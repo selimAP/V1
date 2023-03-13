@@ -63,12 +63,11 @@ body{
     font-size: 28px;
     z-index: 10;
 }
-.navlogo h4{
-    color: var(--secondaryColor);
-    font-weight: 100;
-}
+
 .navlogo img{
-    max-height: 30px;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
 }
 
 
