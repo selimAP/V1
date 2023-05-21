@@ -4,7 +4,7 @@ document.getElementById('splash-screen').classList.remove('hidden');
 setTimeout(function(){
     document.getElementById('splash-screen').classList.add('hidden');
     document.body.style.overflow = ''; // Das Scrollen wird wieder aktiviert
-}, 9000);
+}, 3500);
 
 
 const lines = document.querySelector(".lines");
@@ -90,19 +90,19 @@ showText(index + 1);
 
 //Mainsite
 if (window.matchMedia('(min-width: 850px)').matches) {
-  ScrollReveal().reveal('.itemone', { delay: 10200 });
-  ScrollReveal().reveal('.itemtwo', { delay: 10400 });
-  ScrollReveal().reveal('.itemthree', { delay: 10600 });
-  ScrollReveal().reveal('.itemfour', { delay: 10800 });
+  ScrollReveal().reveal('.itemone', { delay: 3600 });
+  ScrollReveal().reveal('.itemtwo', { delay: 3800 });
+  ScrollReveal().reveal('.itemthree', { delay: 4000 });
+  ScrollReveal().reveal('.itemfour', { delay: 4200 });
 }
 
-ScrollReveal().reveal('.navlogo', { delay: 10800 });
-ScrollReveal().reveal('.mainsite-hi', { delay: 11000 });
-ScrollReveal().reveal('.mainsite-name', { delay: 11200 });
-ScrollReveal().reveal('.mainsite-make', { delay: 11400 });
-ScrollReveal().reveal('.mainsite-about', { delay: 11600 });
-ScrollReveal().reveal('.button', { delay: 11800 });
-ScrollReveal().reveal('.sidebar', { delay: 12000 });
+ScrollReveal().reveal('.navlogo', { delay: 4400 });
+ScrollReveal().reveal('.mainsite-hi', { delay: 4600 });
+ScrollReveal().reveal('.mainsite-name', { delay: 4800 });
+ScrollReveal().reveal('.mainsite-make', { delay: 5000 });
+ScrollReveal().reveal('.mainsite-about', { delay: 5200 });
+ScrollReveal().reveal('.button', { delay: 5400 });
+ScrollReveal().reveal('.sidebar', { delay: 5600 });
 
 
 //Aboutme

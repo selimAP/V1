@@ -4,8 +4,8 @@
     --classicWhite: #ffffff;
     --fontColor: #808080;
     --fontMildGray: #ebebeb;
-    --typewriterSpeed: 3s;
-    --typewriterCharacters: 19;
+    --typewriterSpeed: 1s;
+    --typewriterCharacters: 11;
   }
 
 *{
@@ -13,11 +13,14 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    cursor: url(images/Cursor-T.PNG), auto;
+
 }
 body{
-    background: var(--mainColor);
+    background: var(--mainColor) !important;
     font-family: 'Space Mono', monospace;
     width: 100%;
+
 }
 
 .menu-open body {
@@ -42,6 +45,9 @@ body{
 .header a{
     color: var(--classicWhite);
     text-decoration: none;
+}
+a{
+    cursor: url(images/Shaka.PNG), pointer;
 }
 
 .navbar{
@@ -212,12 +218,10 @@ body{
     .navlink{
         font-size: 30px;
         padding: 0 8px;
-
     }
     .navlink::before{
         bottom: -2px;
         height: 1px;
-
     }
 
     .menu-open .navmenu{
@@ -303,20 +307,6 @@ body{
     blink 700ms steps(var(--typewriterCharacters)) infinite;
 }
 
-.subtitle {
-  color: var(--fontColor);
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-top: 50px;
-  opacity: 0;
-  transform: translateY(3rem);
-  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
-}
-@media (max-width: 530px) {
-    .subtitle{
-        font-size: 1rem;
-    }
-}
 
 @keyframes typewriter {
   to {
@@ -1139,3 +1129,7 @@ footer{
     border-radius: 10px;
 }
 
+::selection {
+    color: rgb(255, 255, 255);
+    background: var(--secondaryColor);
+  }
